@@ -6,7 +6,7 @@
     "start": "node index",
     "server": "nodemon index",
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
-    "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
+    "resetdb": "knex migrate:rollback && knex migrate:latest"
   },
   "repository": {
     "type": "git",
