@@ -25,7 +25,7 @@ exports.seed = async function (knex) {
       resource_description: "Flutter official page",
     },
   ]);
-  await knex("task").insert([
+  await knex("tasks").insert([
     {
       task_description: "react form component oluştur",
       task_notes: "react bootstrap indir, form ekranını tasarla",

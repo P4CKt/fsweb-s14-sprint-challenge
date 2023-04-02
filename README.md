@@ -61,30 +61,30 @@ Uygun veri türlerini ve kısıtlamaları kullanarak migrationları Knex'te "dat
 
 "api" klasörünün içinde aşağıdakiler için uç noktaları olan bir API oluşturun:
 
-- [ ] `[POST] /api/resources`
+- [+] `[POST] /api/resources`
 
   - Yanıt gövdesi örneği: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
-- [ ] `[GET] /api/resources`
+- [+] `[GET] /api/resources`
 
   - Yanıt gövdesi örneği: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [+] `[POST] /api/projects`
 
   - `project_completed` bir tamsayı olarak saklansa da API, istemciyle etkileşim kurarken boolean'lar kullanır.
   - Yanıt gövdesi örneği: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
 
-- [ ] `[GET] /api/projects`
+- [+] `[GET] /api/projects`
 
   - `project_completed` bir tamsayı olarak saklansa da API, istemciyle etkileşim kurarken boolean'lar kullanır.
   - Yanıt gövdesi örneği: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
-- [ ] `[POST] /api/tasks`
+- [+] `[POST] /api/tasks`
 
   - `task_completed` bir tamsayı olarak saklansa da API, istemciyle etkileşim kurarken boolean'lar kullanır.
   - Yanıt gövdesi örneği: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
-- [ ] `[GET] /api/tasks`
+- [+] `[GET] /api/tasks`
   - `task_completed` bir tamsayı olarak saklansa da API, istemciyle etkileşim kurarken boolean'lar kullanır.
   - Her task bir `project_name` ve `project_description` içermelidir
   - Yanıt gövdesi örneği: `[{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_name:"bar","project_description":null}]`
